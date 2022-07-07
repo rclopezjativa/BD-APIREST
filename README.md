@@ -3,10 +3,10 @@ Un servicio API desarrollado con PHP
 Permite realizar la conexión a una base de datos MySQL, proporcionando las interfases necesarias para la administración y consulta de sus datos.
 
 Primera fase:
+
 Método GET
 
-Interfases
-Listar de la tabla Usuarios:
+Interfases - Listar registros de tabla o tablas relacionadas de MySQL
 
 Todos los registros
 
@@ -55,5 +55,7 @@ http://portafoliorc.epizy.com/apirest/ListaUsuariosXOferta?ordenarPor=usuarios.i
 En cualquier caso si se agrega el parámerto verLog=Si se podrá ver el query de SQL a ejecutar
 
 Segunda Fase:
+
 Método POST
+
 En Desarrollo
