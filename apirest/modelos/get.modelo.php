@@ -11,9 +11,9 @@
 			$f_orden = "";
 			$f_where = GetModelo::defineWhere($c_where, $v_where, $PerteneceA, $Conjunto, $EntreCampo, $valor1, $valor2, $tipo);	// Inicialmente el where se configura en espacio en blanco, sinó lo que se defina en los parametros
 			foreach($cs_where as $k => $va) { array_push($a_campos, $va); }
-			if (isset($ordenarPor))
+			if (isset($ordenarPor) || isset($desde))
 			{  	$f_orden = GetModelo::addOrdenYLimites($ordenarPor, $orden, $desde, $hasta);			// llamar a la función para agregar orden y limites
-				if(!in_array($ordenarPor, $a_campos)) { array_push($a_campos, $ordenarPor); }
+				if(isset($ordenarPor)) { if(!in_array($ordenarPor, $a_campos)) { array_push($a_campos, $ordenarPor); } }
 			}
 			if (isset($PerteneceA)) { if(!in_array($PerteneceA, $a_campos)) { array_push($a_campos, $PerteneceA); }}			
 			if (isset($EntreCampo)) { if(!in_array($EntreCampo, $a_campos)) { array_push($a_campos, $EntreCampo); }}
@@ -45,9 +45,9 @@
 			$f_orden = "";
 			$f_where = GetModelo::defineWhere($c_where, $v_where, $PerteneceA, $Conjunto, $EntreCampo, $valor1, $valor2, $tipo);	// Inicialmente el where se configura en espacio en blanco, sinó lo que se defina en los parametros
 			foreach($cs_where as $k => $va) { array_push($a_campos, $va); }
-			if (isset($ordenarPor))
+			if (isset($ordenarPor) || isset($desde))
 			{  	$f_orden = GetModelo::addOrdenYLimites($ordenarPor, $orden, $desde, $hasta);		// llamar a la función para agregar orden y limites
-				if(!in_array($ordenarPor, $a_campos)) { array_push($a_campos, $ordenarPor); }
+				if(isset($ordenarPor)) { if(!in_array($ordenarPor, $a_campos)) { array_push($a_campos, $ordenarPor); } }
 			}
 			$aRelaciones = explode(",", $relaciones);												// Las tablas que se van a relacionar con INNER JOIN separadas por ,
 			$aParClavesRelaciones = explode(",", $claves_relacionadas);								// Los pares de campos utilizados para relaciones INNER separados con ,
@@ -86,9 +86,9 @@
 		static public function getDatos($tabla, $campos, $filtro, $PerteneceA, $Conjunto, $EntreCampo, $valor1, $valor2, $ordenarPor, $orden, $desde, $hasta, $verLog = false){
 			$a_campos = explode(",", $campos);
 			$f_where = ""; $f_orden = ""; $f_clausula = "WHERE ";			
-			if (isset($ordenarPor))
+			if (isset($ordenarPor) || isset($desde))
 			{  	$f_orden = GetModelo::addOrdenYLimites($ordenarPor, $orden, $desde, $hasta);			// llamar a la función para agregar orden y limites
-				if(!in_array($ordenarPor, $a_campos)) { array_push($a_campos, $ordenarPor); }
+				if(isset($ordenarPor)) { if(!in_array($ordenarPor, $a_campos)) { array_push($a_campos, $ordenarPor); } }
 			}
 			if (isset($PerteneceA)) 
 			{ 	$f_conjunto = GetModelo::defineConjunto($PerteneceA, $Conjunto);
