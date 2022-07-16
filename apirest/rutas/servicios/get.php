@@ -17,9 +17,8 @@
 	// --------------------------------------------------------------------------------------------------
 
 	$resp = new GetControlador();
-	$tipo = "w"; $verLog = false;
+	$tipo = "w"; 
 	if (isset($_GET["buscar"])) { $tipo = "s"; }
-	if (isset($_GET["verLog"])) { $verLog = true; }
 	
 	if (isset($_GET["c_where"]) && isset($_GET["buscar"]) && !isset($_GET["relaciones"])) {
 		$resp->getDatos_f(explode("?", $r_array[$i_EndPoint])[0], $_GET["campos"] ?? "*", $_GET["c_where"], $_GET["buscar"], $_GET["pertenece"] ?? null, $_GET["conjunto"] ?? null, $_GET["entre"] ?? null, $_GET["val1"] ?? null, $_GET["val2"] ?? null, $_GET["ordenarPor"] ?? null, $_GET["orden"] ?? null, $_GET["desde"] ?? null, $_GET["hasta"] ?? null, $tipo, $verLog);
