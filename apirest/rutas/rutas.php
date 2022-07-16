@@ -1,5 +1,6 @@
 <?php
-	$r_method = "";
+	$r_method = ""; $verLog = false;
+	if (isset($_GET["verLog"])) { $verLog = true; }
 	$i_EndPoint = 1;											// Configurar según el ambiente publicado
 	$r_array = explode("/", $_SERVER['REQUEST_URI']);			// Capturo la dirección URL utilizada
 	$r_array = array_filter($r_array);							// Cada elemento entre los caracteres "/" en un arreglo
