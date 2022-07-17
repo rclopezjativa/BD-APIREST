@@ -65,10 +65,10 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id_usuario`, `correo_usuario`, `nombre_usuario`, `tipo_documento_usuario`, `numero_documento_usuario`, `date_create_usuarios`, `date_updated_usuarios`) VALUES
-(1, 'rclopez.jativa@hotmail.com', 'roberto.lopez', 'CED', '0915267595', '2022-05-30', '2022-05-31 05:12:11'),
-(2, 'correo1@correo.com', 'Beto', 'CED', '0912312312', '2022-05-30', '2022-05-31 07:25:12'),
-(3, 'correo2@correo.com', 'Luis', 'CED', '0978978945', '2022-05-30', '2022-05-31 07:26:32'),
-(4, 'correo3@correo.com', 'Bety', 'CED', '0945645612', '2022-05-30', '2022-05-31 07:26:32');
+(1, 'correo@hotmail.com', 'roberto', 'CED', '0111111111', '2022-05-30', '2022-05-31 05:12:11'),
+(2, 'correo1@correo.com', 'Beto', 'CED', '0123456789', '2022-05-30', '2022-05-31 07:25:12'),
+(3, 'correo2@correo.com', 'Luis', 'CED', '0987654321', '2022-05-30', '2022-05-31 07:26:32'),
+(4, 'correo3@correo.com', 'Bety', 'CED', '0222222222', '2022-05-30', '2022-05-31 07:26:32');
 
 -- --------------------------------------------------------
 
