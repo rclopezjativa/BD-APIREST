@@ -3,9 +3,8 @@
 	require_once "controladores/post.controlador.php";
 	if (isset($_POST)) {											// Si el requerieminto enviado es con el método POST
 		$columnas = array();										// Se guardan los nombres de los campos enviados en el formulario del requerimiento.
-		foreach(array_keys($_POST) as $k => $v){
-			array_push($columnas, $v);
-		}
+		foreach(array_keys($_POST) as $k => $v)
+		{ array_push($columnas, $v); }
 		if (empty(Conexion::getColumnas(explode("?", $r_array[$i_EndPoint])[0], $columnas))) {
 			$jfile = array (
 				'status' => 400,
@@ -16,7 +15,7 @@
 			echo json_encode($jfile, http_response_code($jfile["status"]));
 			return;
 		}
-		$resp = new postControlador(); 
+		$resp = new PostControlador(); 
 		$resp->setDatos(explode("?", $r_array[$i_EndPoint])[0], $_POST, $verLog);
 	}
 
