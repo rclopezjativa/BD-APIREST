@@ -22,7 +22,7 @@
 			if (!empty($p_resp)) {
 				$jfile = array ('status' => 200, 'registros' => count($p_resp), 'resultado' => 'OK', 'datos' => $p_resp);			
 			} else {
-				$jfile = array ('status' => 404, 'resultado' => 'No encontrado', 'mensaje' => $GLOBALS["err_mensaje"], 'error' => $GLOBALS["err_code"]);			
+				$jfile = array ('status' => 404, 'metodo' => 'GET', 'resultado' => 'No encontrado', 'mensaje' => $GLOBALS["err_mensaje"], 'error' => $GLOBALS["err_code"]);			
 			}
 			echo json_encode($jfile, http_response_code($jfile["status"]));		
 		}

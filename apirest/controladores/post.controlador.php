@@ -9,6 +9,7 @@
 			if (!empty($p_resp)) { $jfile = $p_resp; } 								// Si se envía respuesta
 			else 
 			{ $jfile = array (	'status' => 404, 									// Si no se envía respuesta
+								'metodo' => 'POST',
 								'resultado' => 'No encontrado', 
 								'mensaje' => $GLOBALS["err_mensaje"], 
 								'error' => $GLOBALS["err_code"]
