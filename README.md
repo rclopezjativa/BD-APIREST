@@ -6,7 +6,7 @@ Contiene un servicio API REST desarrollado con PHP.
 <hr>
 <h1>Fase 1</h1>
 <h4>Método GET</h4>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado&message=Publicado en portafolio&color=success"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado&message=Publicado&color=success"></p>
 Dada la siguiente Base de Datos.<br><br>
 ![Base de datos](https://user-images.githubusercontent.com/81062997/177688219-b08948d0-4d51-4736-b558-2c857673a2fd.JPG)
 <b>Interfases (HttpRequest) - Listar/consultar registros de una tabla o tablas relacionadas en una base de datos de MySQL</b>
@@ -85,8 +85,8 @@ Dada la siguiente Base de Datos.<br><br>
 # PORTAFOLIO
 <h1>Fase 2</h1>
 <h4>Método POST</h4>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado&message=Publicado en portafolio&color=success"></p>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=Publicado en portafolio/&color=orange"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado API&message=Publicado&color=success"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=Publicado&color=success"></p>
 <br><b>Interfases (HTML y URLs) - Ingresar registros a las tablas de una base de datos en MySQL</b>
 <br><hr>
 Se crea la programación necesaria dentro del API REST para manejar los requerimientos POST utilizando como EndPoint el nombre de la tabla y como parámetros de formulario (Body) del método los nombres de los campos de la tabla.
@@ -97,8 +97,8 @@ Se crea la programación necesaria dentro del API REST para manejar los requerim
 # PORTAFOLIO
 <h1>Fase 3</h1>
 <h4>Método PUT</h4>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado API&message=Publicado en portafolio/&color=success"></p>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=En Desarrollo/&color=orange"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado API&message=Publicado&color=success"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=En Desarrollo&color=orange"></p>
 <br><b>Interfases (HTML y URLs) - Actualizar registros en las tablas de una base de datos en MySQL</b>
 <br><hr>
 Se crea la programación necesaria dentro del API REST para manejar los requerimientos PUT utilizando como EndPoint el nombre de la tabla y como parámetros de formulario (Body) del método los nombres de los campos de la tabla a actualizar.  Se programan dos parámetros adicionales que son $_GET["PUT"] y $_GET["criterio"], el primero para identificar que se trata de un procedimiento con el método PUT ya que no existe un metadata $_PUT con el que se pueda trabajar en PHP y el segundo contiene el criterio sobre el cual se aplicará la actualización (filtro); por prudencia no se ejecutará una sentencia UPDATE sin un criterio de actualización especificado.
@@ -106,8 +106,8 @@ Se crea la programación necesaria dentro del API REST para manejar los requerim
 # PORTAFOLIO
 <h1>Fase 4</h1>
 <h4>Método DELETE</h4>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado API&message=Publicado en portafolio/&color=success"></p>
-<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=En Desarrollo/&color=orange"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado API&message=Publicado&color=success"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=En Desarrollo&color=orange"></p>
 <br><b>Interfases (HTML y URLs) - Eliminar registros de las tablas de una base de datos en MySQL</b>
 <br><hr>
 Se crea la programación necesaria dentro del API REST para manejar los requerimientos DELETE utilizando como EndPoint el nombre de la tabla.  Se programan dos parámetros que son $_GET["DELETE"] y $_GET["criterio"], el primero para identificar que se trata de un procedimiento con el método DELETE ya que no existe un metadata $_DELETE con el que se pueda trabajar en PHP y el segundo contiene el criterio sobre el cual se aplicará la eliminación (filtro); por prudencia no se ejecutará una sentencia DELETE sin un criterio de eliminación especificado.
