@@ -62,8 +62,7 @@ Dada la siguiente Base de Datos.<br><br>
 <br><hr>
 <b><h4>RECORDAR:</h4></b>El nombre de la tabla es un EndPoint en el caso de hacer una operación directamente a esa tabla.
 <br><br>Para este API REST si se desean combinar tablas en relaciones se debe usar como EndPoint "ListaUsuariosXOferta" (En el código se puede modificar se desea hacerse un poco más general la descripción del EndPoint)
-<br><br>Resumen de los parámetros programados.
-<center>
+<br><br>Resumen de los parámetros programados.<br>
 <table width="50%">
 <tr><td>Parámetro</td><td>Descripción</td></tr>
 <tr><td>campos</td><td>Lista de campos del EndPoint (Tabla-s) a mostrar, separados por "," (coma)</td></tr>
@@ -82,12 +81,12 @@ Dada la siguiente Base de Datos.<br><br>
 <tr><td>relaciones</td><td>Lista de tablas relacionadas y que se enlazaran con la cláusula INNER JOIN, separadas por "," (coma), debe estar acompañado del parámetro "claves_relaciones"</td></tr>+
 <tr><td>claves_relaciones</td><td>Lista de pares de campos (campo;campo) que se relacionan en el INNER JOIN, separadas por "," (coma) (el primero en la lista debe ser un null, ver el ejemplo), debe estar acompañado del parámetro "relaciones"</td></tr>
 </table>
-</center>
 <hr>
 # PORTAFOLIO
 <h1>Fase 2</h1>
 <h4>Método POST</h4>
 <p align="left"><img src="https://img.shields.io/static/v1?label=Estado&message=Publicado en portafolio&color=success"></p>
+<p align="left"><img src="https://img.shields.io/static/v1?label=Estado Formulario REACT&message=Publicado en portafolio/&color=orange"></p>
 <br><b>Interfases (HTML y URLs) - Ingresar registros a las tablas de una base de datos en MySQL</b>
 <br><hr>
 Se crea la programación necesaria dentro del API REST para manejar los requerimientos POST utilizando como EndPoint el nombre de la tabla y como parámetros de formulario (Body) del método los nombres de los campos de la tabla.
